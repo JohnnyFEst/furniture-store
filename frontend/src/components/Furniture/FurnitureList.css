@@ -1,0 +1,27 @@
+.furniture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 10px; 
+    list-style: none; 
+    padding: 0; 
+  }
+  
+
+  .furniture-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center; 
+  }
+  
+  .furniture-item img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .furniture-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
