@@ -1,0 +1,36 @@
+Documentacion de despliegue
+
+1. Transferencia del Código: Copiar los directorios del repositorio a una ubicacion en tu servidor.
+
+2. Configurar del Backend (Django):	- Abre el Command Prompt como administrador.
+					- Navega al directorio del backend
+					- Crea un entorno virtual, en este caso:
+						python -m venv venv   y activarlo:
+						venv\Scripts\activate
+					- Instala dependencias:
+					------------ -------
+					asgiref      3.8.1
+					distlib      0.3.9
+					Django       5.2
+					Djangorestframework
+					psycopg2-binary
+					filelock     3.18.0
+					pip          25.0.1
+					platformdirs 4.3.7
+					sqlparse     0.5.3
+					tzdata       2025.2
+					virtualenv   20.30.0
+
+3. Ejecutar migraciones: python manage.py migrate
+
+4. Crear superusuario: python manage.py createsuperuser
+
+5. abrir una nueva terminal y Navega al directorio del frontend
+
+6. Instala dependencias: npm install
+
+7. Configurar variables de entorno del frontend, en archivos .env.production y se incluye en la build.
+
+8. Construir la aplicación para producción: npm run build.
+
+9. 
